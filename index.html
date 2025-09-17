@@ -36,15 +36,13 @@ overflow-x: hidden;
 </head>
 
 <body>
-fetch('https://script.google.com/macros/s/AKfycbz4JY-e5MRpsBro_27c9Hn82QxZcv2a1ttH7RfsMsx45bU93dtlNHOXQvHRxJ2KHJH2/exec', {
-  method: 'GET',
-  headers: { 'Content-Type': 'application/json' }
-})
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error('Fetch error:', error));
+fetch('https://script.google.com/macros/s/AKfycbz4JY-e5MRpsBro_27c9Hn82QxZcv2a1ttH7RfsMsx45bU93dtlNHOXQvHRxJ2KHJH2/exec')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Fetch error:', error));
 
 </body>
 
 </html>
+
 
