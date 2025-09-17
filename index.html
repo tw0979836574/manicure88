@@ -35,6 +35,43 @@ overflow-x: hidden;
 </head>
 
 <body>
+fetch('<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width>, initial-scale=1.0">
+
+<title>test</title>
+<style type="text/css">
+html {
+overflow: auto;
+}
+
+html,
+body,
+div,
+iframe {
+margin: 0px;
+padding: 0px;
+height: 100%;
+border: none;
+}
+
+iframe {
+display: block;
+width: 100%;
+border: none;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+</style>
+</head>
+
+<body>
 fetch('https://script.google.com/macros/s/AKfycbwmZJ04tKxyrdFcfGWHS7Z445W_22eDNYUd92xo8Cfgut_zgdKnwPovtcoYqC40UtUN/exec', {
   method: 'GET',
   headers: { 'Content-Type': 'application/json' }
@@ -45,4 +82,15 @@ fetch('https://script.google.com/macros/s/AKfycbwmZJ04tKxyrdFcfGWHS7Z445W_22eDNY
 
 </body>
 
+</html>', {
+  method: 'GET',
+  headers: { 'Content-Type': 'application/json' }
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Fetch error:', error));
+
+</body>
+
 </html>
+
